@@ -1,3 +1,6 @@
+body {
+    background-color: #f3f3f3;
+}
 form {
     max-width: 580px;
     margin: 70px auto;
