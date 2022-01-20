@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" contsent="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="currency.css">
     
     <title>Currency converter</title>
@@ -23,6 +23,15 @@
     
 </head>
 <body>
+    <main>
+        <h2><span id="title">Title</span></h2>
+        <p>Base: <span id="base"></span>&deg;</p>
+        <p>Date:<span id="date"></span>&deg;</p>
+        <p>Provider:<span id="provider"></span></p>
+        <p>Rates:<span id="rates"></span></p>
+        
+    </main>
+    
   <!-- Currency Converter  -->
   <h1 class="heading text-center display-2">Currency Converter</h1> 
   <hr>
@@ -31,13 +40,13 @@
       <div class="main">
 
           <div class="form-group">
-              <label for="oamount">
+              <label for="amount">
                   Amount to Convert : 
               </label>
               <input type="text" 
                      class="form-control searchBox" 
                      placeholder="0.00" 
-                     id="oamount">
+                     id="amount">
           </div>
 
           <div class="row">
@@ -60,7 +69,7 @@
               <div class="col-sm-6">
                   <div class="input-group mb-3">
                       <div class="input-group-prepend">
-                          <span class="input-group-text">To</span>
+                          <span id="input-text">To</span>
                       </div>
                       <select class="form-control to" id="sel2">
                           <option value="">Select One …</option>
@@ -87,11 +96,18 @@
 
           <!-- Display the converted amount -->
           <h2>Converted Amount:
-              <span class="finalValue" style="color:rgb(51, 11, 228);">
+              <span id="finalValue" style="color:rgb(51, 11, 228);">
          </span>
           </h2>
       </div>
   </div>
+ 
+    
+    
+    
+    
+    
+
    <!-- linking script.js file -->
   <script src="currency.js"></script>
 </body>
