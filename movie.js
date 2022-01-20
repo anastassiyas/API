@@ -10,7 +10,7 @@
 
 // });
 const apiURL ="//www.omdbapi.com/?apikey=6c3f9ab7&i=tt0118971";
-const img="//img.omdbapi.com/?apikey=6c3f9ab7&i=tt0118971";
+
 fetch (apiURL)
 .then((response) => response.json())
 .then((movieInfo)=> {
@@ -24,6 +24,6 @@ document.getElementById("genre").innerHTML=movieInfo.Genre;
 document.getElementById("mins").innerHTML=movieInfo.Runtime;
 
 const img=movieInfo.Poster;
-document.getElementById("poster").src= iconcodeTwo;
+document.getElementById("poster").src=iconCodeTwo;
 }
 );
